@@ -1,0 +1,22 @@
+{
+ "align_labels_left": 0, 
+ "creation": "2017-03-20 14:02:24.221060", 
+ "custom_format": 0, 
+ "disabled": 0, 
+ "doc_type": "Purchase Invoice", 
+ "docstatus": 0, 
+ "doctype": "Print Format", 
+ "font": "Default", 
+ "format_data": "[{\"fieldname\": \"print_heading_template\", \"fieldtype\": \"Custom HTML\", \"options\": \" \"}, {\"fieldtype\": \"Section Break\", \"label\": \"\"}, {\"fieldtype\": \"Column Break\"}, {\"print_hide\": 0, \"label\": \"Custom HTML\", \"fieldname\": \"_custom_html\", \"options\": \"<table style=\\\"height: 21px;\\\" border=\\\"1\\\" width=\\\"100%\\\">\\n<tbody>\\n<tr>\\n<td>\\n<p><img src=\\\"http://174.138.70.222/files/2307.PNG\\\" alt=\\\"\\\" width=\\\"100%\\\" height=\\\"73\\\" /></p>\\n</td>\\n</tr>\\n</tbody>\\n</table>\\n<table style=\\\"height: 54px;\\\" border=\\\"1\\\" width=\\\"100%\\\">\\n<tbody>\\n<tr>\\n<td style=\\\"border: 0;\\\">\\n<p>&nbsp;1 For the Period<br /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;From</p>\\n</td>\\n<td style=\\\"align: center; border: 0;\\\">{%set date1=doc.posting_date.split('-')%}\\n<table style=\\\"height: 28px;\\\" width=\\\"165\\\">\\n<tbody>\\n<tr>\\n<td style=\\\"border: 1px solid black; height: 20px; width: 20px; text-align: center;\\\">{{date1[1]}}</td>\\n<td style=\\\"border: 1px solid black; height: 20px; width: 20px; text-align: center;\\\">{{date1[2]}}</td>\\n<td style=\\\"border: 1px solid black; height: 20px; width: 20px; text-align: center;\\\">{{date1[0][2:4]}}</td>\\n<td style=\\\"border: 0;\\\">(MM/DD/YY)&nbsp;</td>\\n</tr>\\n</tbody>\\n</table>\\n</td>\\n<td style=\\\"align: center; border: 0;\\\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>\\n<td style=\\\"border: 0;\\\">\\n<p>&nbsp;<br /> &nbsp; &nbsp; To</p>\\n</td>\\n<td style=\\\"align: center; border: 0;\\\">\\n<table style=\\\"height: 28px;\\\" width=\\\"165\\\">\\n<tbody>\\n<tr>\\n<td style=\\\"border: 1px solid black; height: 20px; width: 20px; text-align: center;\\\">{{date1[1]}}</td>\\n<td style=\\\"border: 1px solid black; height: 20px; width: 20px; text-align: center;\\\">{{date1[2]}}</td>\\n<td style=\\\"border: 1px solid black; height: 20px; width: 20px; text-align: center;\\\">{{date1[0][2:4]}}</td>\\n<td style=\\\"border: 0;\\\">(MM/DD/YY)&nbsp;</td>\\n</tr>\\n</tbody>\\n</table>\\n</td>\\n</tr>\\n</tbody>\\n</table>\\n<table style=\\\"height: 20px;\\\" border=\\\"1\\\" width=\\\"100%\\\">\\n<tbody>\\n<tr>\\n<td style=\\\"border: 0; padding: 0;\\\">Part I</td>\\n<td style=\\\"border: 0; padding: 0;\\\">PAYEE INFORMATION</td>\\n</tr>\\n</tbody>\\n</table>\\n<table style=\\\"height: 36px;\\\" border=\\\"1\\\" width=\\\"652\\\">\\n<tbody>\\n<tr>\\n<td>\\n<table style=\\\"height: 21px;\\\" width=\\\"100%\\\">\\n<tbody>\\n<tr>\\n<td style=\\\"border: 0; padding: 0;\\\" width=\\\"150\\\">&nbsp;2 Taxpayer<br />&nbsp; &nbsp; Identification Number</td>\\n<td>\\n<table style=\\\"height: 26px;\\\" width=\\\"209\\\">\\n<tbody>\\n<tr>\\n<td style=\\\"border: 1px solid black;\\\">&nbsp;</td>\\n<td width=\\\"5\\\">&nbsp;</td>\\n<td style=\\\"border: 1px solid black;\\\">&nbsp;</td>\\n<td width=\\\"5\\\">&nbsp;</td>\\n<td style=\\\"border: 1px solid black;\\\">&nbsp;</td>\\n<td width=\\\"5\\\">&nbsp;</td>\\n<td style=\\\"border: 1px solid black;\\\">&nbsp;</td>\\n</tr>\\n</tbody>\\n</table>\\n</td>\\n</tr>\\n</tbody>\\n</table>\\n<table style=\\\"height: 21px;\\\" width=\\\"100%\\\">\\n<tbody>\\n<tr>\\n<td style=\\\"border: 0; padding: 0;\\\" width=\\\"150\\\">3 Payee's Name</td>\\n<td style=\\\"border: 0; padding: 0;\\\" colspan=\\\"3\\\">\\n<table style=\\\"height: 26px;\\\" border=\\\"0\\\" width=\\\"480\\\">\\n<tbody>\\n<tr>\\n<td style=\\\"border: 1px solid black;\\\" width=\\\"100%\\\">&nbsp;aaa</td>\\n</tr>\\n</tbody>\\n</table>\\n(Last Name, First Name, Middle Name for Individuals)(Registered Name for Non-Individuals)</td>\\n</tr>\\n</tbody>\\n</table>\\n</td>\\n</tr>\\n</tbody>\\n</table>\", \"fieldtype\": \"HTML\"}]", 
+ "idx": 0, 
+ "line_breaks": 0, 
+ "modified": "2017-03-20 14:08:38.727648", 
+ "modified_by": "Administrator", 
+ "module": "Philippine Tax Reports", 
+ "name": "BIR Form 2307", 
+ "owner": "Administrator", 
+ "print_format_builder": 0, 
+ "print_format_type": "Server", 
+ "show_section_headings": 0, 
+ "standard": "Yes"
+}

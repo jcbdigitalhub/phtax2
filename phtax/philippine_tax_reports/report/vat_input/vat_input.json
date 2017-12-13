@@ -1,0 +1,19 @@
+{
+ "add_total_row": 0, 
+ "apply_user_permissions": 1, 
+ "creation": "2017-05-24 22:34:30.690802", 
+ "disabled": 0, 
+ "docstatus": 0, 
+ "doctype": "Report", 
+ "idx": 0, 
+ "is_standard": "Yes", 
+ "modified": "2017-10-16 10:12:02.582423", 
+ "modified_by": "Administrator", 
+ "module": "Philippine Tax Reports", 
+ "name": "VAT Input", 
+ "owner": "Administrator", 
+ "query": "SELECT \n\ta.tax_type,\n\ts.tin as \"TIN:Data:120\", \n\ts.registered_name as \"Registered Name:Data:200\", \n\ts.registered_address as \"Registered Address:Data:400\",\n\ta.atc as \"ATC:Data:50\", \n\tABS(a.tax_rate) as \"Tax Rate:Percent:50\",\n\tcredit-debit as \"Amount Withheld:Currency:200\", \n\t(credit-debit)/(ABS(a.tax_rate/100)) as \"Tax Base:Currency:200\",\n\te.voucher_type as \"Voucher Type:Data:100\", \n\te.voucher_no as \"Voucher No:Dynamic Link/Voucher Type:100\",\n\te.remarks as \"Remarks\", e.against_voucher_type\nFROM `tabGL Entry` e JOIN `tabAccount` a ON e.account = a.name JOIN `tabSupplier` s ON e.against = s.name\nWHERE \na.tax_type = 'VAT' AND a.account_type = 'Tax'\nAND e.posting_date BETWEEN %(date_from)s AND %(date_to)s\nAND e.voucher_type <> 'Journal Entry'\n\nunion all\n\nSELECT \n\ta.tax_type,\n\ts.tax_id as \"Tax ID:Data:120\", \n\ts.registered_name as \"Registered Name:Data:200\", \n\ts.registered_address as \"Registered Address:Data:400\",\n\ta.atc as \"ATC:Data:50\", \n\tABS(a.tax_rate) as \"Tax Rate:Percent:50\",\n\tcredit-debit as \"Amount Withheld:Currency:200\", \n\t(credit-debit)/(ABS(a.tax_rate/100)) as \"Tax Base:Currency:200\",\n\te.voucher_type as \"Voucher Type:Data:100\", \n\te.voucher_no as \"Voucher No:Dynamic Link/Voucher Type:100\",\n\te.remarks as \"Remarks\", e.against_voucher_type\nFROM `tabGL Entry` e JOIN `tabAccount` a ON e.account = a.name JOIN `tabCustomer` s ON e.against = s.name\nWHERE \na.tax_type = 'VAT' AND a.account_type = 'Tax'\nAND e.posting_date BETWEEN %(date_from)s AND %(date_to)s\nAND e.voucher_type <> 'Journal Entry'\n\nunion all\n\nSELECT \n\ta.tax_type,\n\ts.tin as \"TIN:Data:120\", \n\ts.registered_name as \"Registered Name:Data:200\", \n\ts.registered_address as \"Registered Address:Data:400\",\n\ta.atc as \"ATC:Data:50\", \n\tABS(a.tax_rate) as \"Tax Rate:Percent:50\",\n\tcredit-debit as \"Amount Withheld:Currency:200\", \n\t(credit-debit)/(ABS(a.tax_rate/100)) as \"Tax Base:Currency:200\",\n\te.voucher_type as \"Voucher Type:Data:100\", \n\te.voucher_no as \"Voucher No:Dynamic Link/Voucher Type:100\",\n\te.remarks as \"Remarks\", e.against_voucher_type\nFROM `tabGL Entry` e JOIN `tabAccount` a ON e.account = a.name JOIN `tabJournal Entry` x ON e.voucher_no = x.name LEFT JOIN `tabSupplier` s ON x.tax_supplier = s.name\nWHERE \na.tax_type = 'VAT' AND a.account_type = 'Tax'\nAND e.posting_date BETWEEN %(date_from)s AND %(date_to)s\nAND e.voucher_type = 'Journal Entry'\n", 
+ "ref_doctype": "Journal Entry", 
+ "report_name": "VAT Input", 
+ "report_type": "Query Report"
+}

@@ -1,8 +1,14 @@
 {
  "align_labels_right": 0, 
+<<<<<<< HEAD
  "creation": "2018-03-12 22:50:07.905510", 
  "css": ".print-format {\n    background: url(\"/private/files/2307.jpg\") no-repeat !important;\n    width: 100% !important;\n    height: 1150px !important;\n    background-size: cover !important;\n    padding: 0 !important;\n}\n\n.pre1 {\n\tmargin: 0;\n\tline-height : 200%;\n}\n.pre2 {\n\tborder: 0;\n\tline-height : 50%;\n}\n\n.pre3 {\n\tborder: 0;\n\tline-height : 39%;\n}\n\n.td0 {\n\tmax-width: 180px;\n\ttext-align: \"right\";\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n}\n\n\n.td1 {\n\tmin-width: 90px;\n\ttext-align: \"right\";\n}\n\n.td2 {\n\tmin-width: 120px;\n\ttext-align: \"right\";\n}\n\ntr {\n        max-height: 8px;\n}\n\ntable {\n\tpadding: 0;\n\tmargin: 0;\n}\n\n#footer {\n   position:absolute;\n   bottom:0;\n   width:100%;\n   height:290px;   /* Height of the footer */\n   background-color:transparent;\n}\n\npre {\n  background-color: transparent;\n}", 
  "custom_format": 1, 
+=======
+ "creation": "2017-03-20 15:32:40.730841", 
+ "css": ".print-format {\n    background: url(\"/home/frappe/frappe-bench/apps/phtax/phtax/philippine_tax_reports/print_format/bir_form_2307/2307.jpg\") no-repeat !important;\n    width: 100% !important;\n    height: 1150px !important;\n    background-size: cover !important;\n    padding: 0 !important;\n}\n\n.pre1 {\n\tmargin: 0;\n\tline-height : 200%;\n}\n.pre2 {\n\tborder: 0;\n\tline-height : 50%;\n}\n\n.pre3 {\n\tborder: 0;\n\tline-height : 39%;\n}\n\n.td0 {\n\tmax-width: 180px;\n\ttext-align: \"right\";\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n}\n\n\n.td1 {\n\tmin-width: 90px;\n\ttext-align: \"right\";\n}\n\n.td2 {\n\tmin-width: 120px;\n\ttext-align: \"right\";\n}\n\ntr {\n        max-height: 8px;\n}\n\ntable {\n\tpadding: 0;\n\tmargin: 0;\n}\n\n#footer {\n   position:absolute;\n   bottom:0;\n   width:100%;\n   height:290px;   /* Height of the footer */\n   background-color:transparent;\n}\n\npre {\n  background-color: transparent;\n}", 
+ "custom_format": 0, 
+>>>>>>> f38c7b1f6332fbc1e6357c4d9ea44b94f7de4914
  "disabled": 0, 
  "doc_type": "Purchase Invoice", 
  "docstatus": 0, 

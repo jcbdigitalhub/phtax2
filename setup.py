@@ -11,8 +11,8 @@ with open('phtax/__init__.py', 'rb') as f:
         f.read().decode('utf-8')).group(1)))
 
 #requirements = parse_requirements("requirements.txt", session="")
-with open(‘requirements.txt’) as f:
-install_requires = f.read().strip().split(’\n’)
+with open('requirements.txt') as f:
+install_requires = f.read().strip().split('\n')
 
 setup(
 	name='phtax',
